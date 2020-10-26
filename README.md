@@ -86,6 +86,7 @@ public function operacionARealizar($operacion, $operatorA, $operatorB)
 ```
 10.  Creación del comando (symfony/console) **operations** con los siguientes comandos:
 > i. `composer require symfony/console`
+> 
 > ii. `php bin\console make:command`
 11. Añadirmos la lógica al comando:
 
