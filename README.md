@@ -20,8 +20,8 @@ Una vez instalado, abra su terminal de consola, muévase al directorio de su nue
 5.  Instalación en desarrollo las herramientas de depuración con el comando `symfony composer req debug --dev`.
 6.  Instalación del Maker Bundle para generar controladores con el comando `symfony composer req maker --dev`.
 7.  Generación del controlador de la calculadora con el comando `symfony console make:controller CalculadoraController`.
-> 7.  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
-> 7. Creación del servicio ***RealizarOperacion***.
+> i.  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
+> ii. Creación del servicio ***RealizarOperacion***.
 
 8.  Añadir lógica a la calculadora:
          /* La función calcular llama al servicio para realizar la operación y devuelve el resultado.
@@ -84,8 +84,8 @@ public function operacionARealizar($operacion, $operatorA, $operatorB)
     }
 ```
 10.  Creación del comando (symfony/console) **operations** con los siguientes comandos:
-> 10. `composer require symfony/console`
-> 10. `php bin\console make:command`
+> i. `composer require symfony/console`
+> ii. `php bin\console make:command`
 11. Añadirmos la lógica al comando:
 
 ```php
