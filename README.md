@@ -7,23 +7,23 @@ El ejercicio consiste en crear una serie de servicios para poder realizar operac
 
 ### Como ejecutar este proyecto
 1. Descargar o clonar este proyecto desde https://github.com/oscarbello89/izertis_test.git
-1.  Si tiene instalado un servidor Nginx o Apache, copie el contenido en un directorio de su servidor y ejecútelo .....
-1. En caso contrario, utilizaremos la línea de comandos (CLI) de  `symfony` (consulta toda la información en este [enlace](https://symfony.com/download "symfony")). 
+2.  Si tiene instalado un servidor Nginx o Apache, copie el contenido en un directorio de su servidor y ejecútelo .....
+3. En caso contrario, utilizaremos la línea de comandos (CLI) de  `symfony` (consulta toda la información en este [enlace](https://symfony.com/download "symfony")). 
 Una vez instalado, abra su terminal de consola, muévase al directorio de su nuevo proyecto e inicie el servidor web local de la siguiente manera (si localmente no tienes instalada una autoridad de certificación añade `--no-tls` al final) :
     `symfony server:start` o `symfony server:start --no-tls`
 
 ### Descripción de los trabajos realizados
 1.  Instalación de la línea de comandos (CLI) de  `symfony`.
-1.  Creación de la aplicación con el comando `symfony new izertis`.
-1.  Instalación de Annotations Routes con el comando `symfony composer require annotations`.
-1.  Activación del log con el comando `symfony composer req logger`.
-1.  Instalación en desarrollo las herramientas de depuración con el comando `symfony composer req debug --dev`.
-1.  Instalación del Maker Bundle para generar controladores con el comando `symfony composer req maker --dev`.
-1.  Generación del controlador de la calculadora con el comando `symfony console make:controller CalculadoraController`.
-> 1.  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
-> 1. Creación del servicio ***RealizarOperacion***.
+2.  Creación de la aplicación con el comando `symfony new izertis`.
+3.  Instalación de Annotations Routes con el comando `symfony composer require annotations`.
+4.  Activación del log con el comando `symfony composer req logger`.
+5.  Instalación en desarrollo las herramientas de depuración con el comando `symfony composer req debug --dev`.
+6.  Instalación del Maker Bundle para generar controladores con el comando `symfony composer req maker --dev`.
+7.  Generación del controlador de la calculadora con el comando `symfony console make:controller CalculadoraController`.
+> 7.  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
+> 7. Creación del servicio ***RealizarOperacion***.
 
-1.  Añadir lógica a la calculadora:
+8.  Añadir lógica a la calculadora:
          /* La función calcular llama al servicio para realizar la operación y devuelve el resultado.
          * @Route("/{operation}/{operatorA}/{operatorB}", name="add")
          * @param string $operation
@@ -40,7 +40,7 @@ Una vez instalado, abra su terminal de consola, muévase al directorio de su nue
             return $respuesta;
         }
 
-1.  Añadir lógica al servicio:
+9.  Añadir lógica al servicio:
 ```php
 public function operacionARealizar($operacion, $operatorA, $operatorB)
     {
@@ -83,10 +83,10 @@ public function operacionARealizar($operacion, $operatorA, $operatorB)
         return $operatorA / $operatorB;
     }
 ```
-1.  Creación del comando (symfony/console) **operations** con los siguientes comandos:
-> 1. `composer require symfony/console`
-> 1. `php bin\console make:command`
-1. Añadirmos la lógica al comando:
+10.  Creación del comando (symfony/console) **operations** con los siguientes comandos:
+> 10. `composer require symfony/console`
+> 10. `php bin\console make:command`
+11. Añadirmos la lógica al comando:
 
 ```php
 class OperationsCommand extends Command
