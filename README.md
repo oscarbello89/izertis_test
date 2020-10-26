@@ -21,6 +21,7 @@ Una vez instalado, abra su terminal de consola, muévase al directorio de su nue
 6.  Instalación del Maker Bundle para generar controladores con el comando `symfony composer req maker --dev`.
 7.  Generación del controlador de la calculadora con el comando `symfony console make:controller CalculadoraController`.
 > i.  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
+> 
 > ii. Creación del servicio ***RealizarOperacion***.
 
 8.  Añadir lógica a la calculadora:
