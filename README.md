@@ -13,17 +13,17 @@ Una vez instalado, abra su terminal de consola, muévase al directorio de su nue
     `symfony server:start` o `symfony server:start --no-tls`
 
 ### Descripción de los trabajos realizados
-1.  Instalación de la línea de comandos (CLI) de  `symfony`.
-2.  Creación de la aplicación con el comando `symfony new izertis`.
-3.  Instalación de Annotations Routes con el comando `symfony composer require annotations`.
-4.  Activación del log con el comando `symfony composer req logger`.
-5.  Instalación en desarrollo las herramientas de depuración con el comando `symfony composer req debug --dev`.
-6.  Instalación del Maker Bundle para generar controladores con el comando `symfony composer req maker --dev`.
-7.  Generación del controlador de la calculadora con el comando `symfony console make:controller CalculadoraController`.
-> 7.  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
-> 7. Creación del servicio ***RealizarOperacion***.
+-  Instalación de la línea de comandos (CLI) de  `symfony`.
+-  Creación de la aplicación con el comando `symfony new izertis`.
+-  Instalación de Annotations Routes con el comando `symfony composer require annotations`.
+-  Activación del log con el comando `symfony composer req logger`.
+-  Instalación en desarrollo las herramientas de depuración con el comando `symfony composer req debug --dev`.
+-  Instalación del Maker Bundle para generar controladores con el comando `symfony composer req maker --dev`.
+-  Generación del controlador de la calculadora con el comando `symfony console make:controller CalculadoraController`.
+> -  Creación de la ruta **/{operation}/{operatorA}/{operatorB}** en el controlador **CalculadoraController**.
+> - Creación del servicio ***RealizarOperacion***.
 
-8.  Añadir lógica a la calculadora:
+-.  Añadir lógica a la calculadora:
          /* La función calcular llama al servicio para realizar la operación y devuelve el resultado.
          * @Route("/{operation}/{operatorA}/{operatorB}", name="add")
          * @param string $operation
@@ -40,7 +40,7 @@ Una vez instalado, abra su terminal de consola, muévase al directorio de su nue
             return $respuesta;
         }
 
-9.  Añadir lógica al servicio:
+-.  Añadir lógica al servicio:
 ```php
 public function operacionARealizar($operacion, $operatorA, $operatorB)
     {
@@ -83,10 +83,10 @@ public function operacionARealizar($operacion, $operatorA, $operatorB)
         return $operatorA / $operatorB;
     }
 ```
-10.  Creación del comando (symfony/console) **operations** con los siguientes comandos:
-> 10. `composer require symfony/console`
-> 10. `php bin\console make:command`
-11. Añadirmos la lógica al comando:
+-  Creación del comando (symfony/console) **operations** con los siguientes comandos:
+> - `composer require symfony/console`
+> - `php bin\console make:command`
+- Añadirmos la lógica al comando:
 
 ```php
 class OperationsCommand extends Command
