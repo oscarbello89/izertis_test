@@ -7,9 +7,8 @@ El ejercicio consiste en crear una serie de servicios para poder realizar operac
 
 ### Como ejecutar este proyecto
 1. Descargar o clonar este proyecto desde https://github.com/oscarbello89/izertis_test.git
-2.  Si tiene instalado un servidor Nginx o Apache, copie el contenido en un directorio de su servidor y ejecútelo .....
-3. En caso contrario, utilizaremos la línea de comandos (CLI) de  `symfony` (consulta toda la información en este [enlace](https://symfony.com/download "symfony")). 
-Una vez instalado, abra su terminal de consola, muévase al directorio de su nuevo proyecto e inicie el servidor web local de la siguiente manera (si localmente no tienes instalada una autoridad de certificación añade `--no-tls` al final) :
+2. Utilizaremos la línea de comandos (CLI) de  `symfony` para visualizar el proyecto (consulta toda la información en este [enlace](https://symfony.com/download "symfony")). 
+3. Una vez instalado, abra su terminal de consola, muévase al directorio de su nuevo proyecto e inicie el servidor web local de la siguiente manera (si localmente no tienes instalada una autoridad de certificación añade `--no-tls` al final) :
     `symfony server:start` o `symfony server:start --no-tls`
 
 ### Descripción de los trabajos realizados
