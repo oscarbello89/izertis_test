@@ -40,7 +40,7 @@ Una vez instalado, abra su terminal de consola, muévase al directorio de su nue
             return $respuesta;
         }
 
--.  Añadir lógica al servicio:
+10.  Añadir lógica al servicio:
 ```php
 public function operacionARealizar($operacion, $operatorA, $operatorB)
     {
