@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Calculadora Izertis</h1>
+    <p class="important">
+        El ejercicio consiste en crear una serie de servicios para poder realizar operaciones matemáticas empleando Symfony 4.4 o superior. 
+        Para más información abra el archivo README.
+    </p>
+{% endblock %}
